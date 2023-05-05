@@ -1,12 +1,13 @@
 // let take a very simple example
 pub fn owner_func(){
     // these are the literals and value is hardcoded with the variable that are store on stack
+    // immutable variable and the size of the data is known by the compiler and the data is stored on the stack 
     let x = "hello";
     let y = x;
     println!("x: {}",x);
     println!("y: {}",y);
     
-    // we can use make a mutable String 
+    // we can use make a mutable String and the data is stored on the heap memory
     let mut s1 = String::from("hello");
     s1.push_str(", world");
     println!("{}",s1);
